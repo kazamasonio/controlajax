@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="div"></div>
+    <table id="table" border="1">
+      <tr>
+        <th>2</th>
+        <th>1</th>
+        <th>3</th>
+      </tr>
+      <tr>
+        <td>44</td>
+        <td>55</td>
+        <td>66</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>22</td>
+        <td>33</td>
+        <td>33</td>
+      </tr>
+      <tr></tr>
+      <tr></tr>
+    </table>
+    <script>
+      div = document.getElementById("table");
+      alert(div.rows.length);
+      alert($("#div").html("<input >"));
+      var table = [1, 5, 2, [1, 5, 48], 4];
+      table[3].splice(0);
+      alert(table);
+
+      console.log($("#div"));
+    </script>
+  </body>
+</html>

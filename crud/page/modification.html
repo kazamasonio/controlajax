@@ -1,0 +1,80 @@
+<head>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<form id="formModification" action="">
+  <div id="cadre">
+    <div id="modifationVoitureForm">
+      <div id="modGauche">
+        <label for="modele">Modèle ou Nom:</label>
+        <input type="text" id="modele" name="modele" value="" />
+
+        <label for="immatriculation">Immatriculation:</label>
+        <input type="text" id="immatriculation" name="immatriculation" />
+
+        <label for="marque">Marque:</label>
+        <input type="text" id="marque" name="marque" />
+
+        <label for="vitesse">Vitesse:</label>
+        <input type="text" id="vitesse" name="vitesse" />
+      </div>
+      <div id="modDroite">
+        <label for="nationalite">Nationalité:</label>
+        <select id="nationalite" name="nationalite">
+          <option value="francaise">Française</option>
+          <option value="allemande">Allemande</option>
+          <option value="japonaise">Japonaise</option>
+          <option value="Amercan">American</option>
+        </select>
+
+        <label for="prix">Prix:</label>
+        <input type="number" id="prix" name="prix" />
+
+        <label for="nombreDisponible">Nombre Disponible:</label>
+        <input type="number" id="nombreDisponible" name="nombreDisponible" />
+      </div>
+    </div>
+    <label>Couleur Disponible:</label>
+    <div id="color">
+      <div class="colorV">
+        <input
+          type="checkbox"
+          id="couleurBlanc"
+          name="couleurDisponible[]"
+          value="Blanc"
+        />
+        <label for="couleurBlanc">Blanc</label>
+      </div>
+      <div class="colorV">
+        <input
+          type="checkbox"
+          id="couleurNoir"
+          name="couleurDisponible[]"
+          value="Noir"
+        />
+        <label for="couleurNoir">Noir</label>
+      </div>
+      <div class="colorV">
+        <input
+          type="checkbox"
+          id="couleurRouge"
+          name="couleurDisponible[]"
+          value="Rouge"
+        />
+        <label for="couleurRouge">Rouge</label>
+      </div>
+      <div class="colorV">
+        <input
+          type="checkbox"
+          id="couleurJaune"
+          name="couleurDisponible[]"
+          value="Jaune"
+        />
+        <label for="couleurJaune">Jaune</label>
+      </div>
+    </div>
+    <div id="btn">
+      <button type="button" id="Modifer">Modifier</button>
+      <button type="button" id="annuler">Annuler</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+  </head>
+  <nav class="navConteneur">
+    <div class="icon">T/B</div>
+    <ul class="menu">
+      <div>
+        <li><a href="">Accuiel</a></li>
+      </div>
+      <div class="tableau menuItem">
+        <li>Tableau <span>></span></li>
+        <div class="sousListe">
+          <li><a href="../index.html">Creation</a></li>
+          <li><a href="#">Table Creer</a></li>
+        </div>
+      </div>
+      <div class="menuItem">
+        <li>Grud<span>></span></li>
+        <div class="sousListe">
+          <li><a href="../index.html">Creation</a></li>
+          <li><a href="#">Table Creer</a></li>
+        </div>
+      </div>
+      <div>
+        <li>Login</li>
+      </div>
+      <div>
+        <li>xx</li>
+      </div>
+    </ul>
+  </nav>
+  <script>
+    $(".menuItem").mouseover(() => {
+      $(".sousListe").css("display", "flex");
+    });
+    $(".menuItem").mouseleave(() => {
+      $(".sousListe").css("display", "none");
+    });
+  </script>
+</html>

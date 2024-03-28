@@ -1,0 +1,182 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#saisi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #a5adad73;
+  width: max-content;
+  height: 150px;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 15px;
+  box-shadow: -3px -1px 6px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #a5adad73;
+  width: max-content;
+  height: 150px;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 15px;
+  box-shadow: -3px -1px 6px 0px;
+}
+#saisi > div > label {
+  display: inline-block;
+  width: 70px;
+}
+#saisi > div > input {
+  width: 100px;
+}
+#conteneur {
+  width: max-content;
+  margin: auto;
+  padding: 10px;
+}
+#tableau {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid;
+  padding: 5px;
+  border-collapse: collapse;
+}
+th {
+  background-color: rgb(163, 192, 192);
+}
+.btn {
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.btn > button,
+.choix > .btnChoix {
+  padding: 5px;
+  border-radius: 5px;
+}
+.Enregistrer {
+  display: none;
+}
+
+/* Nave Barre */
+.icon {
+  display: flex;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: blue;
+  font-weight: bolder;
+  width: 70px;
+  height: 70px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 5px solid black;
+  border-radius: 50px;
+  box-shadow: -6px -1px 6px 1px black;
+  margin-left: 50px;
+}
+.navConteneur {
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  cursor: default;
+}
+.menu > div > li {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 70px;
+  justify-content: center;
+  list-style: none;
+  padding: 15px;
+  transition: 0.4s;
+  font-size: larger;
+}
+.menu > div:hover {
+  /* background-color: rgb(255 255 255 / 91%); */
+  color: rgb(255, 0, 0);
+  border-radius: 15px 15px 0 0px;
+  text-shadow: 0 0 4px;
+}
+li > span {
+  display: inline-flex;
+  transition: 0.2s;
+  font-family: cursive;
+  margin: 0px 5px;
+  transform: scaleY(1.5) scaleX(1.5) rotateZ(180deg);
+  font-size: 10px;
+  text-shadow: 0px -1px 13px white;
+  font-weight: 900;
+  height: 15px;
+}
+.menu > .menuItem:hover span {
+  transform: scaleY(1.5) scaleX(1.5) rotate(85deg);
+}
+
+.sousListe {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: rgb(255 255 255 / 91%);
+  padding: 15px;
+  left: 60px;
+  height: max-content;
+  width: max-content;
+  transition: 0.5s;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.sousListe > li > a {
+  text-decoration: none;
+  color: black;
+}
+.sousListe > li > a:hover {
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 4px;
+}
+.sousListe > li {
+  margin: 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.menuItem {
+  position: relative;
+}
+/* Notification */
+#save {
+  position: fixed;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #00000052;
+  z-index: 0;
+}
+.formSave {
+  width: max-content;
+  height: 100px;
+  padding: 20px;
+  margin: 30vh auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  justify-content: space-around;
+  border-radius: 15px;
+  box-shadow: 1px 0px 13px;
+  background: #ffffff;
+}
